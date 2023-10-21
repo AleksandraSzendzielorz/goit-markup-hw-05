@@ -11,6 +11,7 @@
   --GREY: #2e2f42b2;
   --WHITE: #fff;
   --NAVY-BLUE-modal: #2e2f4266;
+  --DAIRY: #fcfcfc;
 }
 * {
   margin: 0;
@@ -546,4 +547,50 @@ img {
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--GREEN);
+}
+.backdrop {
+  position: fixed;
+  inset: 0 0 auto;
+  min-height: 100vw;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  pointer-events: all;
+  background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  background: var(--DAIRY);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  margin-top: 80px;
+}
+.close-button {
+}
+.close-button-modal {
+  border: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background-color: var(--CORNFLOWER);
+  fill: var(--NAVY-BLUE);
+  border-radius: 50%;
+  justify-content: center;
+  fill: var(--DAIRY);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+.button-modal-close {
+  border: none;
+  background-color: var(--DAIRY);
 }
