@@ -574,28 +574,25 @@ img {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   margin-top: 80px;
 }
-.close-button {
-}
-.close-button-modal {
+
+.button-modal-close {
+  margin-top: 24px;
+  margin-right: 24px;
+  float: right;
+  border: none;
+  background-color: var(--DAIRY);
   border: none;
   width: 24px;
   height: 24px;
   display: flex;
   align-items: center;
   background-color: var(--CORNFLOWER);
-  color: var(--NAVY-BLUE);
   border-radius: 50%;
   justify-content: center;
   fill: var(--DAIRY);
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
 }
-.button-modal-close {
-  margin-top: 24px;
-  margin-right: 24px;
-  margin-left: auto;
-  float: right;
-  border: none;
-  background-color: var(--DAIRY);
-  fill: currentColor;
+.close-button {
+  fill: var(--NAVY-BLUE);
 }
