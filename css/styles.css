@@ -583,7 +583,7 @@ img {
   display: flex;
   align-items: center;
   background-color: var(--CORNFLOWER);
-  fill: var(--NAVY-BLUE);
+  color: var(--NAVY-BLUE);
   border-radius: 50%;
   justify-content: center;
   fill: var(--DAIRY);
@@ -591,6 +591,11 @@ img {
   stroke: rgba(0, 0, 0, 0.1);
 }
 .button-modal-close {
+  margin-top: 24px;
+  margin-right: 24px;
+  margin-left: auto;
+  float: right;
   border: none;
   background-color: var(--DAIRY);
+  fill: currentColor;
 }
