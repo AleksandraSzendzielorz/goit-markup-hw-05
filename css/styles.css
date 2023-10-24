@@ -371,6 +371,7 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
   padding: 24px 0;
+  display: inline-block;
 }
 .nav-list {
   padding: 24px 0;
@@ -641,7 +642,7 @@ img {
   top: 0;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   color: var(--CLOUD);
   padding: 40px 32px;
   background-color: var(--IRIS);
@@ -650,12 +651,10 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
-
-.portfolio-wrapper-caption:hover,
-.portfolio-wrapper-caption:focus {
+.portfolio-link:hover .portfolio-wrapper-caption,
+.portfolio-link:focus .portfolio-wrapper-caption {
   transform: translateY(0%);
 }
-
 .portfolio-list:hover,
 .portfolio-list:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
